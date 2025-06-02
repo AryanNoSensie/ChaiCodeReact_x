@@ -1,6 +1,20 @@
+/* eslint-disable no-unused-vars */
 import React from 'react'
-import { useState ,useEffect , useRef , useMemo } from 'react'
+import { useState ,useEffect , useRef , useMemo , useCallback ,useContext } from 'react'
 import './App.css'
+import Profile from './components/Profile'
+import Footer from './components/Footer'
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -94,22 +108,39 @@ import './App.css'
 // This is particularly useful when passing callbacks to child components to prevent unnecessary re-renders.
 
 
-function App() {
 
 
 
+
+
+
+
+
+//--------------------------------------------------------------------
+
+//usecontext : The useContext hook in React is used to access the context value from a Context Provider without needing to pass props down through every level of the component tree.
+//basically helps in prop drilling and helps in accessing the context value without passing props down
+
+
+//this is context api too , so do some serious concentraion on this topic pls 
+
+
+
+const App = () => {
 
 
 
 
   
-  return(
-    <>
+  return (
+    <div>
+      <Profile></Profile>
+      <Footer></Footer>
 
-
-
-      </>
+      
+    </div>
   )
 }
 
 export default App
+
